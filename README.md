@@ -9,11 +9,11 @@
 
 </div>
 
-Dado que tanto el conocimiento de Angular 8, como websockets, es opcional para el puesto de frontend ofrecido, creamos esta plantilla de inicio rápido, en la cual se podrán encontrar las siguientes funcionalidades:
+Dado que tanto el conocimiento de Angular 8, como websockets, es opcional para el puesto de frontend ofrecido, creamos esta plantilla de inicio rápido, en la cual se podrán encontrar las siguientes características:
 
-* Conexiones al websocket
-* Manejo de eventos recibidos del socket
-* Métodos para emitir ciertos eventos al socket
+* Conexión al websocket
+* Método de ejemplo: getCurrentClients(), para recibir el número de clientes conectados
+* Mensajes en consola al conectarse/reconectarse correctamente al socket (para descartar problemas de configuración)
 
 Es importante mencionar que, para la correcta conexión a tu room personalizada, debes cambiar el string
 `'tu_username_en_git'`, ubicado en `src\services\web-socket-service.ts`, por tu usuario de Github. Luego de eso, sólo necesitarás crear el diseño de la página y hacer uso de (y modificar de ser necesario) los métodos existentes.
