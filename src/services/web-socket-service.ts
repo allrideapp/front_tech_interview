@@ -21,18 +21,5 @@ export class WebSocketService extends Socket {
             }
         }
     });
-
-    this.listen();
   }
-
-  listen = () => {
-    this.ioSocket.on('join', (res: any) => {
-      this.callback.emit(res);
-      console.log("From server ", res);
-    })
-  };
-
-  emitEvent = (payload = {}) => {
-    this.ioSocket.emit('join', payload);
-  };
 }
