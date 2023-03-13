@@ -13,7 +13,6 @@ export class AppComponent {
 
   async ngOnInit(){
     this.webSocketService.connect();
-		this.webSocketService.emit('join');
 
     this.handleSocketConnections();
 
@@ -27,7 +26,6 @@ export class AppComponent {
       console.log('\x1b[36m%s\x1b[0m', "=========== Connection was lost. Reconnected succesfully ============");
       console.log(this);
 			this.webSocketService.connect();
-			this.webSocketService.emit('join');
 		});
 
 		this.webSocketService.on('connect_error', (error, callback) => {
